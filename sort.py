@@ -14,10 +14,5 @@ def sort(lst):
         except IndexError:
             i = 0
     return lst
-   
-
 
 print(sort([1,4,6,2,3,6,1]))
-
-
-
