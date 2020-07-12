@@ -7,7 +7,6 @@ def is_sorted(lst, key=lambda x: x):
 def sort(lst):
     i = 0
     while not is_sorted(lst):
-        print(lst)
         try:
             if lst[i] > lst[i+1]: lst[i], lst[i+1] = lst[i+1], lst[i]
             else: pass
