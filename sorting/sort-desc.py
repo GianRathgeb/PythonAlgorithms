@@ -1,4 +1,4 @@
-def is_sorted(lst, key=lambda x: x):
+def is_sorted_desc(lst, key=lambda x: x):
     for i, el in enumerate(lst[1:]):
         if key(el) > key(lst[i]):
             return False
@@ -6,7 +6,7 @@ def is_sorted(lst, key=lambda x: x):
 
 def sort_desc(lst):
     i = 0
-    while not is_sorted(lst):
+    while not is_sorted_desc(lst):
         try:
             if lst[i] < lst[i+1]: lst[i], lst[i+1] = lst[i+1], lst[i]
             else: pass
